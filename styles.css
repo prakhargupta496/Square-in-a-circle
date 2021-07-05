@@ -1,0 +1,95 @@
+.heading{
+    text-align: center;
+}
+.body{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    border: 15px solid;
+    border-color: red;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+@keyframes circle{
+    0%{
+        border-color: red;
+        transform: scale(1);
+    }
+    25%{
+        border-color: yellowgreen;
+        transform: scale(1.1);
+    }
+    50%{
+        border-color: violet;
+    }
+    75%{
+        border-color: teal;
+    }
+    100%{
+        border-color: springgreen;
+        transform: scale(1);
+    }
+}
+.square{
+    width: 75px;
+    height: 75px;
+    border: 5px solid;
+    border-color: aqua;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes square{
+    0%{
+        border-color: limegreen;
+        transform:rotate(0deg);
+        
+        width: 75px;
+        height: 75px;
+    }
+    25%{
+        border-color: gold;
+        border-width: 10px;
+        
+        width: 55px;
+        height: 55px;
+    }
+    50%{
+        border-color: hotpink;
+        border-width: 20px;
+        width: 35px;
+        height: 35px;
+    }
+    75%{
+        border-color: lightsalmon;
+        border-width: 37.5px;
+        
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        border-color: royalblue;
+        border-width: 5px;
+        transform: rotate(360deg);
+        
+        width: 75px;
+        height: 75px;
+    }
+}
